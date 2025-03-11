@@ -10,11 +10,19 @@ pipeline {
         stage('Start FastAPI Server') {
             steps {
                 script {
-                    // Start the FastAPI server
-                    sh 'python3 model_serving.py'
+                    // Start the FastAPI server in the background
+                    sh 'nohup python3 model_serving.py > output.log 2>&1 &'
+                }
+            }
+        }
+        
+        stage('Check Logs') {
+            steps {
+                script {
+                    // Display the last 50 lines of the log
+                    sh 'tail -n 50 output.log'
                 }
             }
         }
     }
-
 }

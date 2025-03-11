@@ -2,7 +2,7 @@ pipeline {
     agent { 
         node { 
             label 'MLOpsAgent' 
-            customWorkspace 'C:/Repository/GitHub/MLOps-Jenkins/' 
+            customWorkspace '/var/lib/jenkins/workspace/MLOps-pipe' 
         } 
     }
 

@@ -1,3 +1,5 @@
+Create a new github repository
+
 echo "# Wine-MLOps-with-Jenkins" >> README.md
 git init
 git add README.md

@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Start the FastAPI server
-                    sh 'python model_serving.py'
+                    sh 'python3 model_serving.py'
                 }
             }
         }

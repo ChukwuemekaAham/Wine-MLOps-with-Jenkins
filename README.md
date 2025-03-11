@@ -13,6 +13,8 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkin
 
 sudo apt-get update
 
+sudo apt install python3 python3-pip
+
 sudo apt-get install jenkins
 
 http://server_ip:8080/login?from=%2F

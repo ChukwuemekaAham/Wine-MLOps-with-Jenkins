@@ -60,6 +60,15 @@ pipeline {
             }
         }
 
+        stage('Check Logs') {
+            steps {
+                script {
+                    // Display the last 50 lines of the log
+                    sh 'tail -n 50 output.log'
+                }
+            }
+        }
+
         stage('Test Serve Model') {
             steps {
                 script {

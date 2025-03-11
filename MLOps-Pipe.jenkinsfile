@@ -53,7 +53,7 @@ pipeline {
             steps {
                 script {
                     // Start FastAPI server in the background
-                    sh 'start /B python3 model_serving.py'
+                    sh 'nohup python3 model_serving.py > output.log 2>&1 &'
                     // Wait for the server to start
                     sleep time: 10, unit: 'SECONDS'
                 }

@@ -76,6 +76,7 @@ pipeline {
                     sh '''
                         curl -X POST "http://127.0.0.1:8080/predict" \
                         -H "Content-Type: application/json" \
+                        -H "Jenkins-Crumb: 11b2ec872090cf1a7b7384ea5cf90db03b" \                        
                         -d '{"features": [13.2, 2.77, 2.51, 18.5, 103.0, 1.15, 2.61, 0.26, 1.46, 3.0, 1.05, 3.33, 820.0]}'
                     '''
                 }

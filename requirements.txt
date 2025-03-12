@@ -2,3 +2,6 @@ scikit-learn
 pandas
 fastapi
 uvicorn
+websockets
+pydantic
+joblib

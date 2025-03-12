@@ -27,4 +27,5 @@ admin b1@
 
 sudo -u jenkins -H bash
 
-sudo curl -sO http://102.223.37.190:8080/jnlpJars/agent.jar & java -jar agent.jar -url http://102.223.37.190:8080/ -secret 1c794968400aa3a06acab151e6a61b9287429a2245bbc85902ec857974fb147a -name "Dev_Agent_1" -webSocket -workDir "/var/lib/jenkins"
+
+curl -sO http://102.223.37.190:8080/jnlpJars/agent.jar & java -jar agent.jar -url http://102.223.37.190:8080/ -secret 587737172bf4ea588f4f900c55e985e6d0a6e9462dfb33ccdf029c88340c7696 -name "Dev_Agent" -webSocket -workDir "/var/lib/jenkins"
